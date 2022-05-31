@@ -28,25 +28,42 @@
     <section class="main">
       <div class="container container_seasonal">
         <div class="row">
-             <div class="col-2 offset-10 main__seasons">
-              <span class="seasons__item"><i class="fa-solid fa-leaf"></i></span>
-              <span class="seasons__item"><i class="fa-solid fa-wheat-awn"></i></span>
-              <span class="seasons__item"><i class="fa-solid fa-apple-whole"></i></span>
-              <span class="seasons__item"><i class="fa-solid fa-snowflake"></i></span>    
+          <div class="col-3 offset-9 main__seasons">
+            <span class="seasons__item"><i class="fa-solid fa-leaf"></i></span>
+            <span class="seasons__item"
+              ><i class="fa-solid fa-wheat-awn"></i
+            ></span>
+            <span class="seasons__item"
+              ><i class="fa-solid fa-apple-whole"></i
+            ></span>
+            <span class="seasons__item"
+              ><i class="fa-solid fa-snowflake"></i
+            ></span>
+          </div>
         </div>
-          <div class="col-4 main__today">
-            <h3 class="main__city" id="actual-city">Somewhere</h3>
-            <div class="main__day-time">Wednesday, 12:00</div>
-            <div class="main__conditions"></div>
-            <div class="main__weather">
-              <h1>
-                00 °C
-                <span><i id="actual-weather" class="fa-solid fa-sun"></i></span>
-                <a href="#" id="convert-temp">°F ?</a>
-              </h1>
-              <div class="main__conditions">Clear</div>
-            </div>
-            <div class="main__details">humidity: 00 %, wind: 00 km/h</div>
+        <div class="row">
+          <div class="col-4 offset-1">
+            <h3 class="main__city" id="actual-city">Kharkiv</h3>
+            <div class="main__day">Wednesday, May, 31</div>
+            <div class="main__time">12:00</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 main__temperature">
+            <h1>
+              <span><i id="actual-weather" class="fa-solid fa-sun"></i></span>
+              <span class="temperature__number">23</span>
+              <span class="temperature__units">°C /</span>
+              <a href="#" id="convert-temp">°F?</a>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 offset-1 main__detailed">
+            <span class="main__conditions">Clear</span>,
+            <span class="main__humidity">humidity: 19 %</span>,
+            <span class="main__wind">wind: 3 km/h</span>
+          </div>
         </div>
       </div>
     </section>
@@ -55,23 +72,38 @@
         <div class="row">
           <div class="col forecast__item">
             <div class="forecast__day">Thursday</div>
-            <div class="forecast__icon"><i class="fa-solid fa-sun"></i></div>
-            <div class="forecast__temperature">18 °C / 20 °C</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
           </div>
           <div class="col forecast__item">
             <div class="forecast__day">Thursday</div>
-            <div class="forecast__icon"><i class="fa-solid fa-sun"></i></div>
-            <div class="forecast__temperature">18 °C / 20 °C</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
           </div>
           <div class="col forecast__item">
             <div class="forecast__day">Thursday</div>
-            <div class="forecast__icon"><i class="fa-solid fa-sun"></i></div>
-            <div class="forecast__temperature">18 °C / 20 °C</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
           </div>
           <div class="col forecast__item">
             <div class="forecast__day">Thursday</div>
-            <div class="forecast__icon"><i class="fa-solid fa-sun"></i></div>
-            <div class="forecast__temperature">18 °C / 20 °C</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
+          </div>
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
           </div>
         </div>
       </div>
@@ -79,25 +111,34 @@
     <section class="search">
       <div class="container">
         <div class="row">
-          <div class="col-8 offset-2 search__wrapper">
+          <div class="col-9 search__wrapper">
             <form action="" id="search__form">
               <input type="text" id="search__input" />
               <input type="submit" value="Search" id="search__btn" />
             </form>
           </div>
-          <div class="col-2">
-              <button id="current-btn">Current</button>
-            </div>
+          <div class="col-3 current__wrapper">
+            <button id="current-btn">Current City</button>
+          </div>
         </div>
       </div>
     </section>
     <section class="credits">
-        <div class="container">
-            <div class="row">
-                <div class="col-8 credits__link"><a href="#" target ="_blank">Open-source code</a> by Olena Sulimenko</div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 credits__link">
+            <a
+              href="https://github.com/AlyaSulimenko/Vanilla-JS-Weather-App"
+              target="_blank"
+              id="link-source"
+              >Open-source code</a
+            >
+            by Olena Sulimenko
+          </div>
+          <div class="credits__icon"><i class="fa-solid fa-otter"></i></div>
         </div>
-      </section>
+      </div>
+    </section>
     <script src="src/index.js"></script>
   </body>
 </html>
