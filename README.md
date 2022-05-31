@@ -1,0 +1,2 @@
+# Vanilla JS Weather App
+ 
