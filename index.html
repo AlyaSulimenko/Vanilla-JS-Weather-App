@@ -15,10 +15,89 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather</title>
   </head>
   <body>
+    <section class="main">
+      <div class="container container_seasonal">
+        <div class="row">
+             <div class="col-2 offset-10 main__seasons">
+              <span class="seasons__item"><i class="fa-solid fa-leaf"></i></span>
+              <span class="seasons__item"><i class="fa-solid fa-wheat-awn"></i></span>
+              <span class="seasons__item"><i class="fa-solid fa-apple-whole"></i></span>
+              <span class="seasons__item"><i class="fa-solid fa-snowflake"></i></span>    
+        </div>
+          <div class="col-4 main__today">
+            <h3 class="main__city" id="actual-city">Somewhere</h3>
+            <div class="main__day-time">Wednesday, 12:00</div>
+            <div class="main__conditions"></div>
+            <div class="main__weather">
+              <h1>
+                00 °C
+                <span><i id="actual-weather" class="fa-solid fa-sun"></i></span>
+                <a href="#" id="convert-temp">°F ?</a>
+              </h1>
+              <div class="main__conditions">Clear</div>
+            </div>
+            <div class="main__details">humidity: 00 %, wind: 00 km/h</div>
+        </div>
+      </div>
+    </section>
+    <section class="forecast">
+      <div class="container">
+        <div class="row">
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon"><i class="fa-solid fa-sun"></i></div>
+            <div class="forecast__temperature">18 °C / 20 °C</div>
+          </div>
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon"><i class="fa-solid fa-sun"></i></div>
+            <div class="forecast__temperature">18 °C / 20 °C</div>
+          </div>
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon"><i class="fa-solid fa-sun"></i></div>
+            <div class="forecast__temperature">18 °C / 20 °C</div>
+          </div>
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon"><i class="fa-solid fa-sun"></i></div>
+            <div class="forecast__temperature">18 °C / 20 °C</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 offset-2 search__wrapper">
+            <form action="" id="search__form">
+              <input type="text" id="search__input" />
+              <input type="submit" value="Search" id="search__btn" />
+            </form>
+          </div>
+          <div class="col-2">
+              <button id="current-btn">Current</button>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="credits">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 credits__link"><a href="#" target ="_blank">Open-source code</a> by Olena Sulimenko</div>
+            </div>
+        </div>
+      </section>
     <script src="src/index.js"></script>
   </body>
 </html>
