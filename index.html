@@ -26,7 +26,7 @@
   </head>
   <body>
     <section class="main section section__spring">
-      <div class="container container_seasonal">
+      <div class="container container_seasonal container_spring">
         <div class="row">
           <div class="col-3 offset-9 main__seasons">
             <a href="#" class="seasons__item"
@@ -53,7 +53,7 @@
         <div class="row">
           <div class="col-8 main__temperature">
             <h1>
-              <span><i class="fa-solid fa-sun" id="actual-weather"></i></span>
+              <span><i class="fa-solid fa-sun" id="actual-icon"></i></span>
               <span class="temperature__number" id="actual-temp"></span>
               <span class="temperature__units">°C /</span>
               <a href="#" id="convert-temp">°F?</a>
@@ -115,9 +115,13 @@
       <div class="container">
         <div class="row">
           <div class="col-9 search__wrapper">
-            <form action="" id="search__form">
-              <input type="text" id="search__input" />
-              <input type="submit" value="Search" id="search__btn" />
+            <form action="" id="search-form">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Enter the city name..."
+              />
+              <input type="submit" value="Search" id="search-btn" />
             </form>
           </div>
           <!--<div class="col-3 current__wrapper">
