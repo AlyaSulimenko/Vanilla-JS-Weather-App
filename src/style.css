@@ -1,13 +1,17 @@
-.main,
-.forecast,
-.search,
-.search,
-.credits {
+.section {
   margin: 0 auto;
   padding-top: 10px;
   width: 820px;
-  background-color: rgba(239, 144, 175, 0.7);
+  text-transform: capitalize;
   font-family: "Mulish", sans-serif;
+}
+.section__spring {
+  background-color: rgba(239, 144, 175, 0.7);
+  color: #2a595f;
+}
+
+.section__summer {
+  background-color: #fedc84;
   color: #2a595f;
 }
 .container {
@@ -26,23 +30,30 @@
   font-size: 25px;
   margin-left: 12px;
 }
+.seasons__item i {
+  color: #2a595f;
+}
 .main__city {
   color: #f0fdf5;
   text-shadow: -1px 0 #2a595f, 0 1px #2a595f, 1px 0 #2a595f, 0 -1px #2a595f;
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
-.main__day,
-.main__time {
+.main__date,
+.main__time,
+.main__detailed {
   font-size: 16px;
   line-height: 16px;
-  margin-top: 5px;
+  font-weight: 700;
+}
+.main__time {
+  margin-left: 20px;
 }
 .main__temperature {
   padding-left: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .temperature__number,
 .temperature__units,
@@ -68,10 +79,6 @@
 }
 #convert-temp:hover {
   color: #ddec33;
-}
-.main__detailed {
-  font-size: 14px;
-  line-height: 14px;
 }
 
 .forecast__item {
@@ -142,7 +149,7 @@
   height: 36px;
   border: 1px solid #529fd2;
   border-radius: 10px;
-  background-color: #2a595f;
+  background-color: #b2ffef;
   color: white;
   transition: all 1s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -154,12 +161,11 @@
   background-color: #ddec33;
   text-shadow: -1px 0 #529fd2, 0 1px #529fd2, 1px 0 #529fd2, 0 -1px#529fd2;
 }
-#search__btn:hover {
+#search__btn:hover,
+#current-btn:hover {
   background-color: #ddec33;
 }
-#current-btn:hover {
-  background-color: #2a595f;
-}
+
 .credits {
   padding-top: 30px;
   padding-bottom: 10px;

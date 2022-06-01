@@ -25,49 +25,52 @@
     <title>Weather</title>
   </head>
   <body>
-    <section class="main">
+    <section class="main section section__spring">
       <div class="container container_seasonal">
         <div class="row">
           <div class="col-3 offset-9 main__seasons">
-            <span class="seasons__item"><i class="fa-solid fa-leaf"></i></span>
-            <span class="seasons__item"
-              ><i class="fa-solid fa-wheat-awn"></i
-            ></span>
-            <span class="seasons__item"
-              ><i class="fa-solid fa-apple-whole"></i
-            ></span>
-            <span class="seasons__item"
-              ><i class="fa-solid fa-snowflake"></i
-            ></span>
+            <a href="#" class="seasons__item"
+              ><i class="fa-solid fa-leaf" id="seasons__spring"></i
+            ></a>
+            <a href="#" class="seasons__item"
+              ><i class="fa-solid fa-wheat-awn" id="seasons__summer"></i
+            ></a>
+            <a href="#" class="seasons__item"
+              ><i class="fa-solid fa-apple-whole" id="seasons__autumn"></i
+            ></a>
+            <a href="#" class="seasons__item"
+              ><i class="fa-solid fa-snowflake" id="seasons__winter"></i
+            ></a>
           </div>
         </div>
         <div class="row">
-          <div class="col-4 offset-1">
-            <h3 class="main__city" id="actual-city">Kharkiv</h3>
-            <div class="main__day">Wednesday, May, 31</div>
-            <div class="main__time">12:00</div>
+          <div class="col-8 offset-1">
+            <h3 class="main__city" id="actual-city"></h3>
+            <span class="main__date"></span>
+            <span class="main__time"></span>
           </div>
         </div>
         <div class="row">
           <div class="col-8 main__temperature">
             <h1>
-              <span><i id="actual-weather" class="fa-solid fa-sun"></i></span>
-              <span class="temperature__number">23</span>
+              <span><i class="fa-solid fa-sun" id="actual-weather"></i></span>
+              <span class="temperature__number" id="actual-temp"></span>
               <span class="temperature__units">°C /</span>
               <a href="#" id="convert-temp">°F?</a>
             </h1>
           </div>
         </div>
         <div class="row">
-          <div class="col-6 offset-1 main__detailed">
-            <span class="main__conditions">Clear</span>,
-            <span class="main__humidity">humidity: 19 %</span>,
-            <span class="main__wind">wind: 3 km/h</span>
+          <div class="col-7 offset-1 main__detailed">
+            <span class="main__conditions" id="actual-conditions"></span>,
+            humidity:
+            <span class="main__humidity" id="actual-humidity"></span>%, wind:
+            <span class="main__wind" id="actual-wind"></span>km/h
           </div>
         </div>
       </div>
     </section>
-    <section class="forecast">
+    <section class="forecast section section__spring">
       <div class="container">
         <div class="row">
           <div class="col forecast__item">
@@ -108,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="search">
+    <section class="search section section__spring">
       <div class="container">
         <div class="row">
           <div class="col-9 search__wrapper">
@@ -117,13 +120,13 @@
               <input type="submit" value="Search" id="search__btn" />
             </form>
           </div>
-          <div class="col-3 current__wrapper">
+          <!--<div class="col-3 current__wrapper">
             <button id="current-btn">Current City</button>
-          </div>
+          </div>-->
         </div>
       </div>
     </section>
-    <section class="credits">
+    <section class="credits section section__spring">
       <div class="container">
         <div class="row">
           <div class="col-12 credits__link">
