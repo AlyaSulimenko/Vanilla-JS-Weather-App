@@ -111,9 +111,27 @@ if (actMinutes < 10) {
 dayDate.innerHTML = `${actDay}, ${actMonth}, ${actDate}`;
 time.innerHTML = `${actHours}:${actMinutes}`;
 
+//Converter
+let convLink = document.querySelector("#convert-temp");
+let actUnits = document.querySelector(".temperature__units");
+let actNumber = document.querySelector(".temperature__number");
+let convertTemperature = function (event) {
+  event.preventDefault();
+  if (convLink.textContent === "°F?") {
+    actNumber.innerHTML = Math.round(+actNumber.textContent * 1.8 + 32);
+    actUnits.innerHTML = `°F /`;
+    convLink.innerHTML = `°C?`;
+  } else if (convLink.textContent === "°C?") {
+    actNumber.innerHTML = Math.round((+actNumber.textContent - 32) / 1.8);
+    actUnits.innerHTML = `°C /`;
+    convLink.innerHTML = `°F?`;
+  }
+};
+convLink.addEventListener("click", convertTemperature);
+
 //Season Styling
-let seasonalBackground = document.querySelector(".container_seasonal");
-seasonalBackground.classList.remove(seasonalBackground.classList.item(2));
-if (actMonth === "June" || actMonth === "July" || actMonth === "August") {
-  seasonalBackground.classList.add("container_summer");
-}
+//let seasonalBackground = document.querySelector(".container_seasonal");
+//seasonalBackground.classList.remove(seasonalBackground.classList.item(2));
+//if (actMonth === "June" || actMonth === "July" || actMonth === "August") {
+//seasonalBackground.classList.add("container_summer");
+//}

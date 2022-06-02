@@ -11,15 +11,15 @@
   margin: 0 auto;
   width: 800px;
 }
-.container_seasonal {
+.landscape_background {
   height: 510px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.container_spring {
+.landscape_spring {
   background: url("../src/img/spring1800.jpg") center center/cover no-repeat;
 }
-.container_summer {
+.landscape_summer {
   background: url("../src/img/summer1800.jpg") center center/cover no-repeat;
 }
 
@@ -29,6 +29,9 @@
 }
 .seasons__item i {
   color: #2a595f;
+}
+.seasons__item i:hover {
+  color: rgb(239, 144, 175);
 }
 .main__city {
   color: #f0fdf5;
