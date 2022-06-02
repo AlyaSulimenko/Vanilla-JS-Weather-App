@@ -4,6 +4,7 @@ let actTemp = document.querySelector("#actual-temp");
 let actHumidity = document.querySelector("#actual-humidity");
 let actWind = document.querySelector("#actual-wind");
 let actCond = document.querySelector("#actual-conditions");
+
 let displayWeather = function (response) {
   actCity.innerHTML = response.data.name;
   actTemp.innerHTML = Math.round(response.data.main.temp);
@@ -129,9 +130,55 @@ let convertTemperature = function (event) {
 };
 convLink.addEventListener("click", convertTemperature);
 
-//Season Styling
-//let seasonalBackground = document.querySelector(".container_seasonal");
-//seasonalBackground.classList.remove(seasonalBackground.classList.item(2));
-//if (actMonth === "June" || actMonth === "July" || actMonth === "August") {
-//seasonalBackground.classList.add("container_summer");
-//}
+//Season Styling - haven't finished with it though
+
+let seasonalButton = document.querySelector(".search_button");
+let seasonalBackground = document.querySelector(".landscape_background");
+
+let seasonalMain = document.querySelector(".main__container");
+let seasonalSearch = document.querySelector(".search__container");
+let seasonalCredits = document.querySelector(".credits__container");
+
+let showSummer = function () {
+  seasonalBackground.classList.add("summer_background");
+  seasonalButton.classList.add("summer_button");
+  seasonalMain.classList.add("summer");
+  seasonalSearch.classList.add("summer");
+  seasonalCredits.classList.add("summer");
+};
+let resetSeason = function () {
+  seasonalButton.classList.remove(seasonalButton.classList.item(1));
+  seasonalBackground.classList.remove(seasonalBackground.classList.item(1));
+  seasonalMain.classList.remove(seasonalMain.classList.item(2));
+  seasonalSearch.classList.remove(seasonalSearch.classList.item(2));
+  seasonalCredits.classList.remove(seasonalCredits.classList.item(2));
+};
+
+let changeSeasons = function () {
+  if (actMonth === "June" || actMonth === "July" || actMonth === "August") {
+    resetSeason();
+    showSummer();
+  } else if (
+    actMonth === "September" ||
+    actMonth === "October" ||
+    actMonth === "November"
+  ) {
+    resetSeason();
+    showAutumn();
+  } else if (
+    actMonth === "December" ||
+    actMonth === "January" ||
+    actMonth === "February"
+  ) {
+    resetSeason();
+    showWinter();
+  } else if (
+    actMonth === "March" ||
+    actMonth === "April" ||
+    actMonth === "May"
+  ) {
+    resetSeason();
+    showSpring();
+  }
+};
+changeSeasons();

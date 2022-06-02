@@ -25,119 +25,136 @@
     <title>Weather</title>
   </head>
   <body>
-    <section class="main section section__spring">
-      <div class="container landscape_background landscape_spring">
+    <section class="search">
+      <div class="container search__container spring">
         <div class="row">
-          <div class="col-3 offset-9 main__seasons">
-            <a href="#" class="seasons__item"
-              ><i class="fa-solid fa-leaf" id="seasons__spring"></i
-            ></a>
-            <a href="#" class="seasons__item"
-              ><i class="fa-solid fa-wheat-awn" id="seasons__summer"></i
-            ></a>
-            <a href="#" class="seasons__item"
-              ><i class="fa-solid fa-apple-whole" id="seasons__autumn"></i
-            ></a>
-            <a href="#" class="seasons__item"
-              ><i class="fa-solid fa-snowflake" id="seasons__winter"></i
-            ></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-8 offset-1">
-            <h3 class="main__city" id="actual-city"></h3>
-            <span class="main__date"></span>
-            <span class="main__time"></span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-8 main__temperature">
-            <h1>
-              <span><i class="fa-solid fa-sun" id="actual-icon"></i></span>
-              <span class="temperature__number" id="actual-temp"></span>
-              <span class="temperature__units">°C /</span>
-              <a href="#" id="convert-temp">°F?</a>
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-7 offset-1 main__detailed">
-            <span class="main__conditions" id="actual-conditions"></span>,
-            humidity:
-            <span class="main__humidity" id="actual-humidity"></span>%, wind:
-            <span class="main__wind" id="actual-wind"></span>km/h
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="forecast section section__spring">
-      <div class="container">
-        <div class="row">
-          <div class="col forecast__item">
-            <div class="forecast__day">Thursday</div>
-            <div class="forecast__icon">
-              <i class="fa-solid fa-sun icon_small"></i>
-            </div>
-            <div class="forecast__temperature">20°C</div>
-          </div>
-          <div class="col forecast__item">
-            <div class="forecast__day">Thursday</div>
-            <div class="forecast__icon">
-              <i class="fa-solid fa-sun icon_small"></i>
-            </div>
-            <div class="forecast__temperature">20°C</div>
-          </div>
-          <div class="col forecast__item">
-            <div class="forecast__day">Thursday</div>
-            <div class="forecast__icon">
-              <i class="fa-solid fa-sun icon_small"></i>
-            </div>
-            <div class="forecast__temperature">20°C</div>
-          </div>
-          <div class="col forecast__item">
-            <div class="forecast__day">Thursday</div>
-            <div class="forecast__icon">
-              <i class="fa-solid fa-sun icon_small"></i>
-            </div>
-            <div class="forecast__temperature">20°C</div>
-          </div>
-          <div class="col forecast__item">
-            <div class="forecast__day">Thursday</div>
-            <div class="forecast__icon">
-              <i class="fa-solid fa-sun icon_small"></i>
-            </div>
-            <div class="forecast__temperature">20°C</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="search section section__spring">
-      <div class="container">
-        <div class="row">
-          <div class="col-9 search__wrapper">
+          <div class="col-9 search__form">
             <form action="" id="search-form">
               <input
                 type="text"
                 id="search-input"
+                class="search_input spring_input"
                 placeholder="Enter the city name..."
               />
-              <input type="submit" value="Search" id="search-btn" />
+              <input
+                type="submit"
+                value="Search"
+                id="search-btn"
+                class="search_button spring_button"
+              />
             </form>
           </div>
-          <!--<div class="col-3 current__wrapper">
+          <div class="col-3 search__seasons">
+            <a href="#" class="seasons__item"
+              ><i class="fa-solid fa-leaf spring_symbol" id="seasons-spring"></i
+            ></a>
+            <a href="#" class="seasons__item"
+              ><i
+                class="fa-solid fa-wheat-awn summer_symbol"
+                id="seasons-summer"
+              ></i
+            ></a>
+            <a href="#" class="seasons__item"
+              ><i
+                class="fa-solid fa-apple-whole autumn_symbol"
+                id="seasons-autumn"
+              ></i
+            ></a>
+            <a href="#" class="seasons__item"
+              ><i
+                class="fa-solid fa-snowflake winter_symbol"
+                id="seasons-winter"
+              ></i
+            ></a>
+          </div>
+          <!--<div class="col-3 current__btn">
             <button id="current-btn">Current City</button>
           </div>-->
         </div>
       </div>
     </section>
-    <section class="credits section section__spring">
-      <div class="container">
+    <section class="main">
+      <div class="container main__container spring">
+        <div class="landscape_background spring_background">
+          <div class="row">
+            <div class="col-8 offset-1 main__location">
+              <h3 class="main__city" id="actual-city"></h3>
+              <span class="main__date"></span>
+              <span class="main__time"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8 main__temperature">
+              <h1>
+                <span><i class="fa-solid fa-sun" id="actual-icon"></i></span>
+                <span class="temperature__number" id="actual-temp"></span>
+                <span class="temperature__units">°C /</span>
+                <a href="#" id="convert-temp" class="spring_convert">°F?</a>
+              </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-7 offset-1 main__detailed">
+              <span class="main__conditions" id="actual-conditions"></span>,
+              humidity:
+              <span class="main__humidity" id="actual-humidity"></span>%, wind:
+              <span class="main__wind" id="actual-wind"></span>km/h
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--<section class="forecast">
+      <div class="container forecast__container spring">
+        <div class="row">
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
+          </div>
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
+          </div>
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
+          </div>
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
+          </div>
+          <div class="col forecast__item">
+            <div class="forecast__day">Thursday</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <section class="credits">
+      <div class="container credits__container spring">
         <div class="row">
           <div class="col-12 credits__link">
             <a
               href="https://github.com/AlyaSulimenko/Vanilla-JS-Weather-App"
               target="_blank"
               id="link-source"
+              class="link spring_link"
               >Open-source code</a
             >
             by Olena Sulimenko

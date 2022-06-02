@@ -1,38 +1,61 @@
-.section {
-  margin: 0 auto;
-  padding-top: 10px;
-  width: 820px;
-  text-transform: capitalize;
+* {
   font-family: "Mulish", sans-serif;
-  background-color: rgba(239, 144, 175, 0.7);
-  color: #2a595f;
+  text-transform: capitalize;
 }
 .container {
   margin: 0 auto;
   width: 800px;
 }
-.landscape_background {
-  height: 510px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.search__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.landscape_spring {
-  background: url("../src/img/spring1800.jpg") center center/cover no-repeat;
-}
-.landscape_summer {
-  background: url("../src/img/summer1800.jpg") center center/cover no-repeat;
+.search__form {
+  padding-left: 12px;
 }
 
+.spring_input {
+  width: 314px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #529fd2;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding-left: 10px;
+}
+.spring_input:focus {
+  outline: 2px solid rgba(82, 159, 210, 0.8);
+  box-shadow: rgba(82, 159, 210, 0.5) -4px 4px 4px -4px;
+}
+.search_button {
+  margin-left: 7px;
+  height: 38px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
+}
 .seasons__item {
   font-size: 25px;
   margin-left: 12px;
 }
 .seasons__item i {
-  color: #2a595f;
+  color: #94aad9;
+
+  transition: all 0.5s ease-in-out;
 }
 .seasons__item i:hover {
-  color: rgb(239, 144, 175);
+  text-shadow: -1px 0 rgba(122, 99, 108, 1), 0 1px rgba(122, 99, 108, 1),
+    1px 0 rgba(122, 99, 108, 1), 0 -1px rgba(122, 99, 108, 1);
 }
+.landscape_background {
+  padding-top: 20px;
+  height: 510px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 .main__city {
   color: #f0fdf5;
   text-shadow: -1px 0 #2a595f, 0 1px #2a595f, 1px 0 #2a595f, 0 -1px #2a595f;
@@ -47,6 +70,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+  margin-top: 5px;
 }
 .main__time {
   margin-left: 20px;
@@ -73,7 +97,7 @@
 #actual-icon {
   font-size: 85px;
   text-shadow: -1px 0 #2a595f, 0 1px #2a595f, 1px 0 #2a595f, 0 -1px #2a595f;
-  color: #ddec33;
+  color: #f0fdf5;
 }
 
 #convert-temp {
@@ -121,56 +145,9 @@
   text-align: center;
 }
 
-.search {
-  padding-top: 45px;
-}
-.search__wrapper {
-  padding-left: 0;
-}
-.current__wrapper {
-  padding-right: 0;
-}
-
-#search-input {
-  width: 314px;
-  height: 36px;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #529fd2;
-  border: none;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding-left: 10px;
-}
-#search-input:focus {
-  outline: 2px solid #ddec33;
-  box-shadow: rgba(82, 159, 210, 0.5) -4px 4px 4px -4px;
-}
-#search-btn,
-#current-btn {
-  margin-left: 7px;
-  height: 36px;
-  border: 1px solid #529fd2;
-  border-radius: 10px;
-  background-color: #2a595f;
-  color: white;
-  transition: all 1s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  text-shadow: -1px 0 #529fd2, 0 1px #529fd2, 1px 0 #529fd2, 0 -1px#529fd2;
-  font-weight: 600;
-}
-#current-btn {
-  width: 182px;
-  background-color: #ddec33;
-  text-shadow: -1px 0 #529fd2, 0 1px #529fd2, 1px 0 #529fd2, 0 -1px#529fd2;
-}
-#search-btn:hover,
-#current-btn:hover {
-  background-color: #ddec33;
-}
-
-.credits {
-  padding-top: 30px;
-  padding-bottom: 10px;
+.credits__container {
+  padding-top: 20px;
+  padding-bottom: 100px;
   text-align: center;
 }
 #link-source {
@@ -180,4 +157,54 @@
 }
 .credits__icon {
   font-size: 30px;
+}
+.spring {
+  background-color: rgba(239, 144, 175, 0.7);
+  color: #2a595f;
+}
+.spring_background {
+  background: url("../src/img/spring1800.jpg") center center/cover no-repeat;
+}
+.spring_button {
+  border: 2px solid rgba(82, 159, 210, 0);
+  background-color: #2a595f;
+  text-shadow: -1px 0 rgba(82, 159, 210, 0), 0 1px rgba(82, 159, 210, 0),
+    1px 0 rgba(82, 159, 210, 0), 0 -1px rgba(82, 159, 210, 0);
+}
+.spring_button:hover {
+  border: 2px solid rgba(82, 159, 210, 1);
+  text-shadow: -1px 0 rgba(82, 159, 210, 1), 0 1px rgba(82, 159, 210, 1),
+    1px 0 rgba(82, 159, 210, 1), 0 -1px rgba(82, 159, 210, 1);
+}
+.summer {
+  background-color: #fedc84;
+  color: #545f88;
+}
+.summer_background {
+  background: url("../src/img/summer1800.jpg") center center/cover no-repeat;
+}
+.summer_button {
+  background-color: #94aad9;
+  border: 2px solid rgba(122, 99, 108, 0);
+  text-shadow: -1px 0 rgba(122, 99, 108, 0), 0 1px rgba(122, 99, 108, 0),
+    1px 0 rgba(122, 99, 108, 0), 0 -1px rgba(122, 99, 108, 0);
+}
+.summer_button:hover {
+  border: 2px solid rgba(122, 99, 108, 1);
+  text-shadow: -1px 0 rgba(122, 99, 108, 1), 0 1px rgba(122, 99, 108, 1),
+    1px 0 rgba(122, 99, 108, 1), 0 -1px rgba(122, 99, 108, 1);
+}
+.autumn {
+  background-color: rgba(200, 76, 65, 0.8);
+  color: #2a595f;
+}
+.autumn_background {
+  background: url("../src/img/autumn1800.jpg") center center/cover no-repeat;
+}
+.winter {
+  background-color: rgba(182, 151, 216, 0.6);
+  color: #82bfeb;
+}
+.winter_background {
+  background: url("../src/img/winter1800.jpg") center center/cover no-repeat;
 }
