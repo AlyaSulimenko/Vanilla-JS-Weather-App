@@ -106,17 +106,19 @@
 #convert-temp:hover {
   color: #ddec33;
 }
-
+.forecast__container {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 .forecast__item {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin-left: 10px;
-
+  margin-left: 12px;
   padding: 10px;
 }
-.forecast__item:nth-child(1) {
-  margin-left: 0;
+.forecast__item:nth-child(5) {
+  margin-right: 12px;
 }
 .forecast__day {
   font-size: 20px;
@@ -128,10 +130,9 @@
 .forecast__icon {
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: #f0fdf5;
+  text-shadow: -1px 0 #2a595f, 0 1px #2a595f, 1px 0 #2a595f, 0 -1px #2a595f;
+
   width: 52px;
 }
 .icon_small {
@@ -146,7 +147,7 @@
 }
 
 .credits__container {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 100px;
   text-align: center;
 }

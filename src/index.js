@@ -130,6 +130,28 @@ let convertTemperature = function (event) {
 };
 convLink.addEventListener("click", convertTemperature);
 
+//Multiplying the items in forecast with fake data
+
+let displayAllForecastItems = function () {
+  let forecastContent = document.querySelector("#forecast-wrapper");
+  let forecastHTML = `<div class="row">`;
+  let daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+  daysOfWeek.forEach(function (dayOfWeek) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col forecast__item">
+            <div class="forecast__day">${dayOfWeek}</div>
+            <div class="forecast__icon">
+              <i class="fa-solid fa-sun icon_small"></i>
+            </div>
+            <div class="forecast__temperature">20°C</div>
+          </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastContent.innerHTML = forecastHTML;
+};
+displayAllForecastItems();
+
 //Season Styling - haven't finished with it though
 
 let seasonalButton = document.querySelector(".search_button");
@@ -139,12 +161,14 @@ let seasonalMain = document.querySelector(".main__container");
 let seasonalSearch = document.querySelector(".search__container");
 let seasonalCredits = document.querySelector(".credits__container");
 
+let seasonalForecast = document.querySelector(".forecast__container");
 let showSummer = function () {
   seasonalBackground.classList.add("summer_background");
   seasonalButton.classList.add("summer_button");
   seasonalMain.classList.add("summer");
   seasonalSearch.classList.add("summer");
   seasonalCredits.classList.add("summer");
+  seasonalForecast.classList.add("summer");
 };
 let resetSeason = function () {
   seasonalButton.classList.remove(seasonalButton.classList.item(1));
@@ -152,6 +176,7 @@ let resetSeason = function () {
   seasonalMain.classList.remove(seasonalMain.classList.item(2));
   seasonalSearch.classList.remove(seasonalSearch.classList.item(2));
   seasonalCredits.classList.remove(seasonalCredits.classList.item(2));
+  seasonalForecast.classList.remove(seasonalForecast.classList.item(2));
 };
 
 let changeSeasons = function () {
