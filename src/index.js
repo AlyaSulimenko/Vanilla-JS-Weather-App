@@ -20,7 +20,7 @@ let displayAllForecastItems = function (response) {
   let forecastHTML = `<div class="row">`;
 
   forecast.forEach(function (forecastDayOfWeek, index) {
-    if (index < 5) {
+    if (index > 0 && index < 6) {
       let smallIcon = " ";
       if (
         forecastDayOfWeek.weather[0].main === "Rain" ||
