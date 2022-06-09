@@ -22,6 +22,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/spring.css" />
+    <link rel="stylesheet" href="src/summer.css" />
+    <link rel="stylesheet" href="src/autumn.css" />
+    <link rel="stylesheet" href="src/winter.css">
     <title>Weather</title>
   </head>
   <body>
@@ -46,23 +50,23 @@
           </div>
           <div class="col-3 search__seasons">
             <a href="#" class="seasons__item"
-              ><i class="fa-solid fa-leaf spring_symbol" id="seasons-spring"></i
+              ><i class="fa-solid fa-leaf spring_symbol seasons__item_spring" id="seasons-spring"></i
             ></a>
             <a href="#" class="seasons__item"
               ><i
-                class="fa-solid fa-wheat-awn summer_symbol"
+                class="fa-solid fa-wheat-awn summer_symbol seasons__item_spring"
                 id="seasons-summer"
               ></i
             ></a>
             <a href="#" class="seasons__item"
               ><i
-                class="fa-solid fa-apple-whole autumn_symbol"
+                class="fa-solid fa-apple-whole autumn_symbol seasons__item_spring"
                 id="seasons-autumn"
               ></i
             ></a>
             <a href="#" class="seasons__item"
               ><i
-                class="fa-solid fa-snowflake winter_symbol"
+                class="fa-solid fa-snowflake winter_symbol seasons__item_spring"
                 id="seasons-winter"
               ></i
             ></a>
@@ -88,8 +92,8 @@
               <h1>
                 <span><i class="fa-solid fa-sun" id="actual-icon"></i></span>
                 <span class="temperature__number" id="actual-temp"></span>
-                <span class="temperature__units">°C /</span>
-                <a href="#" id="convert-temp" class="spring_convert">°F?</a>
+                <span class="temperature__units">°C/</span>
+                <a href="#" id="convert-temp" class="temperature_convert spring_convert">°F?</a>
               </h1>
             </div>
           </div>

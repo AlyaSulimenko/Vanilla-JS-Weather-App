@@ -1,0 +1,38 @@
+.winter {
+  background-color: rgba(182, 151, 216, 0.6);
+  color: #82bfeb;
+}
+.winter_background {
+  background: url("../src/img/winter1800.jpg") center center/cover no-repeat;
+}
+.winter_input:focus {
+  outline: 2px solid rgba(238, 133, 178, 0.8);
+  box-shadow: rgba(82, 159, 210, 0.5) -4px 4px 4px -4px;
+}
+.winter_button {
+  border: 2px solid rgba(136, 114, 38, 0);
+  background-color: #59aae0;
+  text-shadow: -1px 0 rgba(82, 159, 210, 0), 0 1px rgba(82, 159, 210, 0),
+    1px 0 rgba(82, 159, 210, 0), 0 -1px rgba(82, 159, 210, 0);
+}
+.winter_button:hover {
+  border: 2px solid rgba(244, 115, 171, 1);
+  text-shadow: -1px 0 rgba(244, 115, 171, 1), 0 1px rgba(244, 115, 171, 1),
+    1px 0 rgba(244, 115, 171, 1), 0 -1px rgba(244, 115, 171, 1);
+}
+.seasons__item_winter {
+  color: #59aae0;
+}
+.seasons__item_winter:hover {
+  text-shadow: -1px 0 rgba(244, 115, 171, 1), 0 1px rgba(244, 115, 171, 1),
+    1px 0 rgba(244, 115, 171, 1), 0 -1px rgba(244, 115, 171, 1);
+}
+.winter_convert:hover {
+  color: #59aae0;
+}
+.winter_link {
+  color: #cf6da6;
+}
+.winter_link:hover {
+  color: #59aae0;
+}

@@ -14,7 +14,7 @@
   padding-left: 12px;
 }
 
-.spring_input {
+.search_input {
   width: 314px;
   height: 36px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -24,10 +24,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding-left: 10px;
 }
-.spring_input:focus {
-  outline: 2px solid rgba(82, 159, 210, 0.8);
-  box-shadow: rgba(82, 159, 210, 0.5) -4px 4px 4px -4px;
-}
+
 .search_button {
   margin-left: 7px;
   height: 38px;
@@ -41,13 +38,7 @@
   margin-left: 12px;
 }
 .seasons__item i {
-  color: #94aad9;
-
   transition: all 0.5s ease-in-out;
-}
-.seasons__item i:hover {
-  text-shadow: -1px 0 rgba(122, 99, 108, 1), 0 1px rgba(122, 99, 108, 1),
-    1px 0 rgba(122, 99, 108, 1), 0 -1px rgba(122, 99, 108, 1);
 }
 .landscape_background {
   padding-top: 20px;
@@ -81,7 +72,7 @@
 }
 .temperature__number,
 .temperature__units,
-#convert-temp {
+.temperature_convert {
   font-size: 85px;
   font-weight: 900;
   color: #f0fdf5;
@@ -90,7 +81,7 @@
   text-decoration: none;
 }
 .temperature__units,
-#convert-temp {
+.temperature_convert {
   font-size: 35px;
   vertical-align: top;
 }
@@ -100,12 +91,10 @@
   color: #f0fdf5;
 }
 
-#convert-temp {
+.temperature_convert {
   font-size: 20px;
 }
-#convert-temp:hover {
-  color: #ddec33;
-}
+
 .forecast__container {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -153,59 +142,8 @@
 }
 #link-source {
   text-decoration: none;
-  color: #529fd2;
   font-weight: 800;
 }
 .credits__icon {
   font-size: 30px;
-}
-.spring {
-  background-color: rgba(239, 144, 175, 0.7);
-  color: #2a595f;
-}
-.spring_background {
-  background: url("../src/img/spring1800.jpg") center center/cover no-repeat;
-}
-.spring_button {
-  border: 2px solid rgba(82, 159, 210, 0);
-  background-color: #2a595f;
-  text-shadow: -1px 0 rgba(82, 159, 210, 0), 0 1px rgba(82, 159, 210, 0),
-    1px 0 rgba(82, 159, 210, 0), 0 -1px rgba(82, 159, 210, 0);
-}
-.spring_button:hover {
-  border: 2px solid rgba(82, 159, 210, 1);
-  text-shadow: -1px 0 rgba(82, 159, 210, 1), 0 1px rgba(82, 159, 210, 1),
-    1px 0 rgba(82, 159, 210, 1), 0 -1px rgba(82, 159, 210, 1);
-}
-.summer {
-  background-color: #fedc84;
-  color: #545f88;
-}
-.summer_background {
-  background: url("../src/img/summer1800.jpg") center center/cover no-repeat;
-}
-.summer_button {
-  background-color: #94aad9;
-  border: 2px solid rgba(122, 99, 108, 0);
-  text-shadow: -1px 0 rgba(122, 99, 108, 0), 0 1px rgba(122, 99, 108, 0),
-    1px 0 rgba(122, 99, 108, 0), 0 -1px rgba(122, 99, 108, 0);
-}
-.summer_button:hover {
-  border: 2px solid rgba(122, 99, 108, 1);
-  text-shadow: -1px 0 rgba(122, 99, 108, 1), 0 1px rgba(122, 99, 108, 1),
-    1px 0 rgba(122, 99, 108, 1), 0 -1px rgba(122, 99, 108, 1);
-}
-.autumn {
-  background-color: rgba(200, 76, 65, 0.8);
-  color: #2a595f;
-}
-.autumn_background {
-  background: url("../src/img/autumn1800.jpg") center center/cover no-repeat;
-}
-.winter {
-  background-color: rgba(182, 151, 216, 0.6);
-  color: #82bfeb;
-}
-.winter_background {
-  background: url("../src/img/winter1800.jpg") center center/cover no-repeat;
 }

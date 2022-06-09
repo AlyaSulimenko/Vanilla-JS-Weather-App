@@ -1,0 +1,38 @@
+.autumn {
+  background-color: rgba(200, 76, 65, 0.8);
+  color: #2a595f;
+}
+.autumn_background {
+  background: url("../src/img/autumn1800.jpg") center center/cover no-repeat;
+}
+.autumn_input:focus {
+  outline: 2px solid rgba(136, 114, 38, 1);
+  box-shadow: rgba(82, 159, 210, 0.5) -4px 4px 4px -4px;
+}
+.autumn_button {
+  border: 2px solid rgba(136, 114, 38, 0);
+  background-color: #e0c658;
+  text-shadow: -1px 0 rgba(82, 159, 210, 0), 0 1px rgba(82, 159, 210, 0),
+    1px 0 rgba(82, 159, 210, 0), 0 -1px rgba(82, 159, 210, 0);
+}
+.autumn_button:hover {
+  border: 2px solid rgba(136, 114, 38, 1);
+  text-shadow: -1px 0 rgba(136, 114, 38, 1), 0 1px rgba(136, 114, 38, 1),
+    1px 0 rgba(136, 114, 38, 1), 0 -1px rgba(136, 114, 38, 1);
+}
+.seasons__item_autumn {
+  color: #e0c658;
+}
+.seasons__item_autumn:hover {
+  text-shadow: -1px 0 rgba(136, 114, 38, 1), 0 1px rgba(136, 114, 38, 1),
+    1px 0 rgba(136, 114, 38, 1), 0 -1px rgba(136, 114, 38, 1);
+}
+.autumn_convert:hover {
+  color: #e0c658;
+}
+.autumn_link {
+  color: #212756;
+}
+.autumn_link:hover {
+  color: #e0c658;
+}
